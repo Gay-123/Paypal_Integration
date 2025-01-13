@@ -1,0 +1,113 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* PayPal Logo Styling */
+.paypal-logo {
+  max-width: 250px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Header Styling */
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  color: #0070ba; /* PayPal Blue */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Payment Details Section */
+.payment-details {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.payment-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.payment-details p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* PayPal Button Container Styling */
+#paypal-button-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .payment-details h2 {
+    font-size: 20px;
+  }
+
+  .payment-details p {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}

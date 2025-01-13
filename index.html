@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paypal Payment</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://www.paypal.com/sdk/js?client-id=AQh3H2I1eAbj_qPAQWcRt2ZKJq7rl0m_tDOzVpgpcgSwYHlLOXmunSvGd46DjZ_LOoQtuccYn68ZP9rf"></script> <!-- Replace with your PayPal Client ID -->
+</head>
+<body>
+  <div class="container">
+    <!-- PayPal Logo at the Top -->
+    <header>
+      <img src="assets\Monogram\PayPal-Monogram-FullColor-White-RGB.png" alt="PayPal Logo" class="paypal-logo">
+      <h1>Pay with PayPal</h1>
+      <p>Secure and fast payment process</p>
+    </header>
+
+    <!-- PayPal Button -->
+    <div id="paypal-button-container"></div>
+
+    <footer>
+      <p>&copy; 2025 PayPal, Inc. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '49.99'
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          window.location.href = "/success"; // Redirect after success
+        });
+      }
+    }).render('#paypal-button-container');
+  </script>
+</body>
+</html>
