@@ -5,6 +5,7 @@ This project demonstrates a simple and clean integration of **PayPal Checkout** 
 ---
 
 ## 🚀 Features
+
 ✅ Node.js backend with PayPal REST SDK
 ✅ Simple frontend for checkout
 ✅ Environment variable support
@@ -14,14 +15,16 @@ This project demonstrates a simple and clean integration of **PayPal Checkout** 
 
 ## 📦 Environment Variables
 
-Create a `.env` file like below:
+Create a `.env` file with the following content:
+
 PORT=3000
-CLIENT_ID=your_paypal_client_id 
+CLIENT_ID=your_paypal_client_id
 CLIENT_SECRET=your_paypal_client_secret
 
 ---
 
 ## 🛠️ Run Locally
+
 git clone https://github.com/Gay-123/Paypal_Integration.git 
 cd Paypal_Integration
 npm install node server.js
@@ -53,7 +56,18 @@ Make sure to open **port 3000** in your EC2 Security Group.
 ---
 
 ## 📁 Project Structure
-📦 Paypal_Integration ┣ 📂 css ┣ 📄 index.html ┣ 📄 cancel.html ┣ 📄 success.html ┣ 📄 server.js ┣ 📄 app.js ┣ 📄 .env ┗ 📄 package.json
+
+📦 Paypal_Integration
+┣ 📂 css
+┣ 📄 index.html
+┣ 📄 cancel.html
+┣ 📄 success.html
+┣ 📄 server.js
+┣ 📄 app.js
+┣ 📄 .env
+┗ 📄 package.json
+
+---
 
 ## 🔚 Conclusion
 
