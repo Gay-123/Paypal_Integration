@@ -6,10 +6,10 @@ This project demonstrates a simple and clean integration of **PayPal Checkout** 
 
 ## 🚀 Features
 
-✅ Node.js backend with PayPal REST SDK
-✅ Simple frontend for checkout
-✅ Environment variable support
-✅ Ready for deployment on AWS EC2
+- ✅ Node.js backend with PayPal REST SDK  
+- ✅ Simple frontend for checkout  
+- ✅ Environment variable support  
+- ✅ Ready for deployment on AWS EC2  
 
 ---
 
