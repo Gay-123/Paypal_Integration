@@ -17,7 +17,11 @@ This project demonstrates a simple and clean integration of **PayPal Checkout** 
 
 Create a `.env` file with the following content:
 
-PORT=3000 CLIENT_ID=your_paypal_client_id CLIENT_SECRET=your_paypal_client_secret
+```
+PORT=3000
+CLIENT_ID=your_paypal_client_id
+CLIENT_SECRET=your_paypal_client_secret
+```
 
 ---
 
@@ -65,20 +69,6 @@ Then visit: http://localhost:3000
 - Go to: https://developer.paypal.com/
 - Create a sandbox app
 - Use the generated **Client ID** and **Client Secret** in your `.env` file
-
----
-
-## 📁 Project Structure
-
-📦 Paypal_Integration
- ┣ 📂 css
- ┣ 📄 index.html
- ┣ 📄 cancel.html
- ┣ 📄 success.html
- ┣ 📄 server.js
- ┣ 📄 app.js
- ┣ 📄 .env
- ┗ 📄 package.json
 
 ---
 
