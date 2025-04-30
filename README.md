@@ -15,7 +15,9 @@ This project demonstrates a simple and clean integration of **PayPal Checkout** 
 
 ## 📦 Environment Variables
 
-<pre lang="markdown"> ## Create a `.env` file with the following content: ``` PORT=3000 CLIENT_ID=your_paypal_client_id CLIENT_SECRET=your_paypal_client_secret ``` </pre>
+Create a `.env` file with the following content:
+
+PORT=3000 CLIENT_ID=your_paypal_client_id CLIENT_SECRET=your_paypal_client_secret
 
 ---
 
