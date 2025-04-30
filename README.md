@@ -23,25 +23,40 @@ PORT=3000 CLIENT_ID=your_paypal_client_id CLIENT_SECRET=your_paypal_client_secre
 
 ## 🛠️ Run Locally
 
-git clone https://github.com/Gay-123/Paypal_Integration.git 
+```bash
+git clone https://github.com/Gay-123/Paypal_Integration.git
 cd Paypal_Integration
-npm install node server.js
+npm install
+node server.js
+```
 
-Then visit: `http://localhost:3000`
+Then visit: http://localhost:3000
 
 ---
 
 ## ☁️ AWS EC2 Deployment
 
-Launch Ubuntu EC2 instance
+1. Launch Ubuntu EC2 instance
 
-SSH into the instance: ssh -i your-key.pem ubuntu@<EC2-IP>
+2. SSH into the instance:
+   ```bash
+   ssh -i your-key.pem ubuntu@<EC2-IP>
+   ```
+3. Install required packages:
+   ```
+   sudo apt update sudo apt
+   sudo apt install git nodejs npm 
+   ```
 
-Install required packages: sudo apt update sudo apt install git nodejs npm
+4. Clone and run your project:
+   ```
+   git clone https://github.com/Gay-123/Paypal_Integration.git
+   cd Paypal_Integration
+   npm install
+   node server.js
+   ```
 
-Clone your repo and run: git clone https://github.com/Gay-123/Paypal_Integration.git cd Paypal_Integration npm install node server.js
-
-Make sure to open **port 3000** in your EC2 Security Group.
+📌 Make sure to open port 3000 in your EC2 Security Group.
 
 ---
 
@@ -56,14 +71,14 @@ Make sure to open **port 3000** in your EC2 Security Group.
 ## 📁 Project Structure
 
 📦 Paypal_Integration
-┣ 📂 css
-┣ 📄 index.html
-┣ 📄 cancel.html
-┣ 📄 success.html
-┣ 📄 server.js
-┣ 📄 app.js
-┣ 📄 .env
-┗ 📄 package.json
+ ┣ 📂 css
+ ┣ 📄 index.html
+ ┣ 📄 cancel.html
+ ┣ 📄 success.html
+ ┣ 📄 server.js
+ ┣ 📄 app.js
+ ┣ 📄 .env
+ ┗ 📄 package.json
 
 ---
 
